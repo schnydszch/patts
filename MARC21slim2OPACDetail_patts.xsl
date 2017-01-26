@@ -181,8 +181,8 @@
             <xsl:with-param name="theme" select="$theme"/>
         </xsl:call-template>
 		
-    <!--added for PATTS Library -->
-    
+		<!--added for PATTS Library -->
+		
 		<xsl:if test="marc:datafield[@tag=720]/marc:subfield[@code='a']">
 					 <span class="results_summary"><span class="label">Thesis Adviser: </span>
                     <xsl:for-each select="marc:datafield[@tag=720]">
@@ -192,7 +192,8 @@
 					</xsl:for-each>
 					 </span>
 					</xsl:if>
-<!--added for PATTS Library -->
+					
+		<!--added for PATTS Library -->
 
    <xsl:if test="$DisplayOPACiconsXSLT!='0'">
         <xsl:if test="$materialTypeCode!=''">
